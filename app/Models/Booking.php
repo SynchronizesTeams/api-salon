@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
-    //
+    protected $fillable = [
+        'name',
+        'no_telp',
+        'email',
+        'service',
+        'date',
+        'notes',
+    ];
 }

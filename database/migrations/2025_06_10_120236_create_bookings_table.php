@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('service');
             $table->date('date');
             $table->string('notes');
+            $table->enum('status', ['done', 'cancel', 'process', 'waiting'])->default('waiting');
             $table->timestamps();
         });
     }

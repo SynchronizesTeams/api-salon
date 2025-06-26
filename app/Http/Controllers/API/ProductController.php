@@ -46,5 +46,5 @@ class ProductController extends Controller
             'success' => true,
             'data' => $product
         ]);
-
+    }
 }
